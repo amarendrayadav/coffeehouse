@@ -17,9 +17,8 @@ public class BillService {
 
     public BillResponse calculateCustomerBill(final BillRequest billRequest) {
         log.debug("fetching bill for customer {} ", billRequest);
-//        BillAdapter.convertRequest(billRequest);
-        return null;
+        BillAdapter.convertRequest(billRequest);
+        return BillAdapter.convertEntity(BillAdapter.convertRequest(billRequest));
     }
 
-//    public BillResponse
 }
