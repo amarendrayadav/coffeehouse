@@ -13,7 +13,6 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class BillService {
     private final BillRepository repository;
-    private final BillAdapter adapter;
 
     public BillResponse calculateCustomerBill(final BillRequest billRequest) {
         log.debug("fetching bill for customer {} ", billRequest);

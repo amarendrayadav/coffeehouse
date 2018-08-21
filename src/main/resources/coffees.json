@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "074e2d93-2b7a-46bd-914c-83f9a6d1164e",
+    "name": "C1",
+    "description": "Description",
+    "totalServings": 100
+  },
+  {
+    "_id": "09ca730f-b952-414d-b37b-24c094717858",
+    "name": "C1",
+    "description": "Description",
+    "totalServings": 100
+  },
+  {
+    "_id": "eccd0dff-ad3d-4288-bf07-c6c04e5fa32a",
+    "name": "C1",
+    "description": "Description",
+    "totalServings": 100
+  },
+  {
+    "_id": "84b17bba-b17c-44db-a3ed-b32ec716d906",
+    "name": "C1",
+    "description": "Description",
+    "totalServings": 100
+  }
+]

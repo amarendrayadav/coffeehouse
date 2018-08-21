@@ -19,7 +19,7 @@ public abstract class CoffeeMapper {
 
     @AfterMapping
     public void afterMapping(@MappingTarget Coffee coffee, CoffeeRequestBody coffeeRequestBody) {
-        coffee.setId(UUID.randomUUID());
+        coffee.set_id(UUID.randomUUID());
     }
 
     public abstract CoffeeResponseBody map(final Coffee coffee);
