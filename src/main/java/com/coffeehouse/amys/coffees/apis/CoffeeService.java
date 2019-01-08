@@ -1,10 +1,10 @@
-package com.coffeehouse.amys.inventory.apis;
+package com.coffeehouse.amys.coffees.apis;
 
-import com.coffeehouse.amys.inventory.adapter.CoffeeAdapter;
-import com.coffeehouse.amys.inventory.dataaccess.Coffee;
-import com.coffeehouse.amys.inventory.dataaccess.CoffeeRepository;
-import com.coffeehouse.amys.inventory.dataaccess.CoffeeRequestBody;
-import com.coffeehouse.amys.inventory.dataaccess.CoffeeResponseBody;
+import com.coffeehouse.amys.coffees.adapter.CoffeeAdapter;
+import com.coffeehouse.amys.coffees.dataaccess.Coffee;
+import com.coffeehouse.amys.coffees.dataaccess.CoffeeRepository;
+import com.coffeehouse.amys.coffees.dataaccess.CoffeeRequestBody;
+import com.coffeehouse.amys.coffees.dataaccess.CoffeeResponseBody;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

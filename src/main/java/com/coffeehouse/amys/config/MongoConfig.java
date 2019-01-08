@@ -2,8 +2,8 @@ package com.coffeehouse.amys.config;
 
 import com.coffeehouse.amys.customer.dataaccess.Customer;
 import com.coffeehouse.amys.customer.dataaccess.CustomerRepository;
-import com.coffeehouse.amys.inventory.dataaccess.Coffee;
-import com.coffeehouse.amys.inventory.dataaccess.CoffeeRepository;
+import com.coffeehouse.amys.coffees.dataaccess.Coffee;
+import com.coffeehouse.amys.coffees.dataaccess.CoffeeRepository;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;

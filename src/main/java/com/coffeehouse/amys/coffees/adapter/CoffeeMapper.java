@@ -1,8 +1,8 @@
-package com.coffeehouse.amys.inventory.adapter;
+package com.coffeehouse.amys.coffees.adapter;
 
-import com.coffeehouse.amys.inventory.dataaccess.Coffee;
-import com.coffeehouse.amys.inventory.dataaccess.CoffeeRequestBody;
-import com.coffeehouse.amys.inventory.dataaccess.CoffeeResponseBody;
+import com.coffeehouse.amys.coffees.dataaccess.Coffee;
+import com.coffeehouse.amys.coffees.dataaccess.CoffeeRequestBody;
+import com.coffeehouse.amys.coffees.dataaccess.CoffeeResponseBody;
 import org.mapstruct.AfterMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

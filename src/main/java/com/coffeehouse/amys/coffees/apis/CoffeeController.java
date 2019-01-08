@@ -1,8 +1,8 @@
-package com.coffeehouse.amys.inventory.apis;
+package com.coffeehouse.amys.coffees.apis;
 
 import com.coffeehouse.amys.core.AbstractController;
-import com.coffeehouse.amys.inventory.dataaccess.CoffeeRequestBody;
-import com.coffeehouse.amys.inventory.dataaccess.CoffeeResponseBody;
+import com.coffeehouse.amys.coffees.dataaccess.CoffeeRequestBody;
+import com.coffeehouse.amys.coffees.dataaccess.CoffeeResponseBody;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
@@ -14,28 +14,28 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/inventory")
+@RequestMapping(value = "/coffees")
 @Slf4j
 @RequiredArgsConstructor
 public class CoffeeController extends AbstractController {
 
     private final CoffeeService coffeeService;
 
-    @ApiOperation(value = "Get all from inventory")
+    @ApiOperation(value = "Get all from coffees")
     @RequestMapping(value = "/coffee", method = RequestMethod.GET)
     public ResponseEntity<List<CoffeeResponseBody>> getInventoryStatus() {
-        log.debug("get all from inventory ");
+        log.debug("get all from coffees ");
         return getResponse(coffeeService.getAllVarieties(), HttpStatus.OK);
     }
 
     @ApiOperation(value = "Add new coffee variety")
     @RequestMapping(value = "/coffee", method = RequestMethod.POST)
-    public ResponseEntity<CoffeeResponseBody> addNewVariety(@ApiParam(value = "Coffee Request Body") @RequestBody CoffeeRequestBody requestBody) {
+    public ResponseEntity<CoffeeResponseBody> addNewVariety(@ApiParam(value = "Inventory Request Body") @RequestBody CoffeeRequestBody requestBody) {
         log.debug("add new coffee variety {}", requestBody);
         return getResponse(coffeeService.addNewVariety(requestBody), HttpStatus.CREATED);
     }
 
-    @ApiOperation(value = "Get inventory status")
+    @ApiOperation(value = "Get coffees status")
     @RequestMapping(value = "/coffee", method = RequestMethod.GET, params = "name")
     public ResponseEntity<List<CoffeeResponseBody>> getInventoryStatus(@ApiParam(value = "name")
                                                                        @RequestParam(value = "name") final String name) {
